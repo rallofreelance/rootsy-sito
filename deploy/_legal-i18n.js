@@ -410,6 +410,12 @@
       it.classList.toggle('active', it.getAttribute('data-lang') === lng);
     });
 
+    /* "Torna al sito" e logo: aprono la pagina del sito nella stessa lingua */
+    document.querySelectorAll('.legal-nav a[href="/"], .legal-nav a[data-home]').forEach(function(a){
+      a.setAttribute('data-home', '1');
+      a.setAttribute('href', '/' + lng + '/');
+    });
+
     /* Impressum: il corpo della pagina ha traduzioni proprie (_impressum-i18n.js) */
     if (page === 'impressum' && window.__impressumApply) window.__impressumApply(lng);
 
