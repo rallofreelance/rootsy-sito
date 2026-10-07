@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Traducción",
+ "advisory.body": "Esta es una traducción para tu comodidad. Solo la <strong>versión alemana</strong> de este aviso legal es jurídicamente vinculante. <a href=\"#\" data-show-de>Mostrar la versión alemana</a>",
+ "imp.eyebrow": "Información obligatoria según el § 5 DDG",
+ "imp.updated": "Última actualización: 7 de octubre de 2026",
+ "imp.h.provider": "Prestador del servicio",
+ "imp.legalform": "Empresa individual (pequeña empresa)",
+ "imp.country": "Alemania",
+ "imp.h.contact": "Contacto",
+ "imp.email": "Correo electrónico",
+ "imp.h.responsible": "Responsable del contenido según el § 18, apdo. 2, MStV",
+ "imp.responsible": "David Rallo, dirección indicada arriba",
+ "imp.h.dsa": "Punto de contacto según la Ley de Servicios Digitales",
+ "imp.dsa": "Punto de contacto único para autoridades y usuarios según los art. 11 y 12 del Reglamento (UE) 2022/2065 (Digital Services Act): <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Las solicitudes pueden enviarse en alemán, inglés o italiano.",
+ "imp.h.adr": "Resolución de litigios de consumo",
+ "imp.adr": "No estamos dispuestos ni obligados a participar en procedimientos de resolución de litigios ante una entidad de resolución de conflictos de consumo (§ 36 VSBG).",
+ "imp.h.liab": "Responsabilidad por los contenidos",
+ "imp.liab": "Somos responsables de nuestros propios contenidos en estas páginas conforme a la legislación general. Para la información de terceros que solo transmitimos o almacenamos (por ejemplo, las publicaciones de la comunidad en la app) se aplican las normas de responsabilidad de los art. 4 a 6 del Reglamento (UE) 2022/2065 (Digital Services Act). No existe una obligación general de supervisar dicha información (art. 8 DSA). En cuanto tenemos conocimiento de contenidos ilícitos, los eliminamos sin demora.",
+ "imp.h.links": "Responsabilidad por los enlaces",
+ "imp.links": "Nuestro servicio contiene enlaces a sitios web externos de terceros, sobre cuyos contenidos no tenemos ninguna influencia. El responsable del contenido de las páginas enlazadas es siempre su respectivo proveedor u operador. Si tenemos conocimiento de alguna infracción legal, eliminaremos de inmediato los enlaces afectados.",
+ "imp.h.copy": "Derechos de autor",
+ "imp.copy": "Los contenidos y obras creados por nosotros en estas páginas están sujetos a la legislación alemana sobre derechos de autor. La reproducción, edición, distribución y cualquier tipo de explotación fuera de los límites de los derechos de autor requieren nuestro consentimiento por escrito."
+}

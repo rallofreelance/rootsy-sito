@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Tõlge",
+ "advisory.body": "See on tõlge sinu mugavuseks. Õiguslikult siduv on ainult nende õiguslike andmete <strong>saksakeelne versioon</strong>. <a href=\"#\" data-show-de>Näita saksakeelset versiooni</a>",
+ "imp.eyebrow": "Kohustuslikud andmed § 5 DDG alusel",
+ "imp.updated": "Viimati uuendatud: 7. oktoober 2026",
+ "imp.h.provider": "Teenuseosutaja",
+ "imp.legalform": "Füüsilisest isikust ettevõtja (väikeettevõte)",
+ "imp.country": "Saksamaa",
+ "imp.h.contact": "Kontakt",
+ "imp.email": "E-post",
+ "imp.h.responsible": "Sisu eest vastutav isik § 18 lg 2 MStV alusel",
+ "imp.responsible": "David Rallo, aadress nagu eespool",
+ "imp.h.dsa": "Kontaktpunkt digiteenuste määruse alusel",
+ "imp.dsa": "Ühtne kontaktpunkt asutustele ja kasutajatele määruse (EL) 2022/2065 (Digital Services Act) artiklite 11 ja 12 alusel: <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Pöördumisi saab saata saksa, inglise või itaalia keeles.",
+ "imp.h.adr": "Tarbijavaidluste lahendamine",
+ "imp.adr": "Me ei ole valmis ega kohustatud osalema vaidluste lahendamise menetluses tarbijavaidluste komisjonis (§ 36 VSBG).",
+ "imp.h.liab": "Vastutus sisu eest",
+ "imp.liab": "Oma sisu eest nendel lehtedel vastutame vastavalt üldistele seadustele. Kolmandate isikute teabe suhtes, mida me ainult edastame või salvestame (näiteks kogukonna postitused rakenduses), kehtivad määruse (EL) 2022/2065 (Digital Services Act) artiklite 4–6 vastutusreeglid. Üldist kohustust sellist teavet jälgida ei ole (DSA artikkel 8). Niipea kui saame teada ebaseaduslikust sisust, eemaldame selle viivitamata.",
+ "imp.h.links": "Vastutus linkide eest",
+ "imp.links": "Meie teenus sisaldab linke kolmandate isikute välistele veebisaitidele, mille sisu me mõjutada ei saa. Lingitud lehtede sisu eest vastutab alati vastav teenuseosutaja või haldaja. Kui saame teada õigusrikkumisest, eemaldame vastavad lingid viivitamata.",
+ "imp.h.copy": "Autoriõigus",
+ "imp.copy": "Meie poolt nendel lehtedel loodud sisu ja teosed on kaitstud Saksamaa autoriõigusega. Reprodutseerimine, töötlemine, levitamine ja igasugune kasutamine väljaspool autoriõiguse piire nõuab meie kirjalikku nõusolekut."
+}

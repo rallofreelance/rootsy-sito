@@ -410,6 +410,9 @@
       it.classList.toggle('active', it.getAttribute('data-lang') === lng);
     });
 
+    /* Impressum: il corpo della pagina ha traduzioni proprie (_impressum-i18n.js) */
+    if (page === 'impressum' && window.__impressumApply) window.__impressumApply(lng);
+
     try { localStorage.setItem('rootsy-legal-lang', lng); } catch(e){}
   }
   window.applyLegalLang = applyLang;

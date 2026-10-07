@@ -49,6 +49,7 @@
   .alert { background: #FFF2ED; border-left: 4px solid var(--orange); padding: 14px 18px; border-radius: 0 12px 12px 0; margin: 18px 0; font-size: 14px; color: var(--text); }
   footer.foot { background: var(--text); color: rgba(255,255,255,0.7); padding: 30px 36px; font-size: 13px; text-align: center; margin-top: 60px; }
   footer.foot a { color: var(--orange); }
+  .addr-missing { display: inline-block; background: #FEE2E2; color: #B91C1C; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
 </style>
 </head>
 <body data-page="impressum">
@@ -63,44 +64,49 @@
   </div>
 </nav>
 <main>
-  <p class="eyebrow">Pflichtangaben gemäß § 5 TMG</p>
+  <p class="eyebrow" data-imp="imp.eyebrow">Pflichtangaben gemäß § 5 DDG</p>
   <h1>Impressum</h1>
-  <p class="updated">Stand: 9. Mai 2026</p>
+  <p class="updated" data-imp="imp.updated">Stand: 7. Oktober 2026</p>
 
   <div class="legal-advisory">
-    <div class="legal-advisory-title" data-i18n="advisory.title">Höflichkeitsübersetzung</div>
-    <div class="legal-advisory-body" data-i18n-html="advisory.body">Dieses Rechtsdokument ist gemäß § 5 TMG auf Deutsch vorgeschrieben. Die <strong>deutsche Version</strong> bleibt rechtsverbindlich. Für eine vollständige Übersetzung in deiner Sprache schreibe an <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>.</div>
+    <div class="legal-advisory-title" data-imp="advisory.title">Rechtsverbindliche Fassung</div>
+    <div class="legal-advisory-body" data-imp="advisory.body">Dies ist die <strong>rechtsverbindliche deutsche Fassung</strong> des Impressums. Übersetzungen in andere Sprachen findest du im Sprachmenü oben.</div>
   </div>
 
-  <h2>Anbieter</h2>
+  <h2 data-imp="imp.h.provider">Anbieter</h2>
   <p>
-    <strong>Rootsy</strong> — David Rallo<br>
-    Klein Gewerbe (eingetragen in Deutschland)<br>
-    Anschrift auf Anfrage<br>
-    E-Mail: <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a><br>
+    <strong>David Rallo</strong><br>
+    Rootsy · <span data-imp="imp.legalform">Einzelunternehmen (Kleingewerbe)</span><br>
+    <span class="addr-missing">ANSCHRIFT FEHLT NOCH: Straße und Hausnummer, PLZ und Ort</span><br>
+    <span data-imp="imp.country">Deutschland</span>
+  </p>
+
+  <h2 data-imp="imp.h.contact">Kontakt</h2>
+  <p>
+    <span data-imp="imp.email">E-Mail</span>: <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a><br>
     Web: <a href="https://myrootsy.com">myrootsy.com</a>
   </p>
 
-  <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-  <p>David Rallo (Anschrift wie oben)</p>
+  <h2 data-imp="imp.h.responsible">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p data-imp="imp.responsible">David Rallo, Anschrift wie oben</p>
 
-  <h2>EU-Streitschlichtung</h2>
-  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.</p>
-  <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+  <h2 data-imp="imp.h.dsa">Kontaktstelle nach dem Digital Services Act</h2>
+  <p data-imp="imp.dsa">Zentrale Kontaktstelle für Behörden und Nutzer nach Art. 11 und 12 der Verordnung (EU) 2022/2065 (Digital Services Act): <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>. Anfragen sind auf Deutsch, Englisch und Italienisch möglich.</p>
 
-  <h2>Verbraucherstreitbeilegung</h2>
-  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  <h2 data-imp="imp.h.adr">Verbraucherstreitbeilegung</h2>
+  <p data-imp="imp.adr">Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).</p>
 
-  <h2>Haftung für Inhalte</h2>
-  <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+  <h2 data-imp="imp.h.liab">Haftung für Inhalte</h2>
+  <p data-imp="imp.liab">Für eigene Inhalte auf diesen Seiten sind wir nach den allgemeinen Gesetzen verantwortlich. Für fremde Informationen, die wir nur übermitteln oder speichern (zum Beispiel Beiträge der Community in der App), gelten die Haftungsregeln der Art. 4 bis 6 der Verordnung (EU) 2022/2065 (Digital Services Act). Eine allgemeine Pflicht, solche Informationen zu überwachen, besteht nicht (Art. 8 DSA). Sobald wir von rechtswidrigen Inhalten erfahren, entfernen wir sie umgehend.</p>
 
-  <h2>Haftung für Links</h2>
-  <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+  <h2 data-imp="imp.h.links">Haftung für Links</h2>
+  <p data-imp="imp.links">Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Werden uns Rechtsverletzungen bekannt, entfernen wir die betreffenden Links umgehend.</p>
 
-  <h2>Urheberrecht</h2>
-  <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+  <h2 data-imp="imp.h.copy">Urheberrecht</h2>
+  <p data-imp="imp.copy">Die von uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen unserer schriftlichen Zustimmung.</p>
 </main>
 <footer class="foot" data-i18n-html="footer.copy">© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a></footer>
+<script src="_impressum-i18n.js" defer></script>
 <script src="_legal-i18n.js" defer></script>
 </body>
 </html>

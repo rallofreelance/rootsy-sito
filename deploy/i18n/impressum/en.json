@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Translation",
+ "advisory.body": "This is a translation for your convenience. Only the <strong>German version</strong> of this legal notice is legally binding. <a href=\"#\" data-show-de>Show the German version</a>",
+ "imp.eyebrow": "Mandatory information pursuant to § 5 DDG",
+ "imp.updated": "Last updated: 7 October 2026",
+ "imp.h.provider": "Provider",
+ "imp.legalform": "Sole proprietorship (small business)",
+ "imp.country": "Germany",
+ "imp.h.contact": "Contact",
+ "imp.email": "Email",
+ "imp.h.responsible": "Responsible for content pursuant to § 18(2) MStV",
+ "imp.responsible": "David Rallo, address as above",
+ "imp.h.dsa": "Point of contact under the Digital Services Act",
+ "imp.dsa": "Single point of contact for authorities and users pursuant to Art. 11 and 12 of Regulation (EU) 2022/2065 (Digital Services Act): <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Requests can be made in German, English or Italian.",
+ "imp.h.adr": "Consumer dispute resolution",
+ "imp.adr": "We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board (§ 36 VSBG).",
+ "imp.h.liab": "Liability for content",
+ "imp.liab": "We are responsible for our own content on these pages under general law. For third-party information that we merely transmit or store (for example, community posts in the app), the liability rules of Art. 4 to 6 of Regulation (EU) 2022/2065 (Digital Services Act) apply. There is no general obligation to monitor such information (Art. 8 DSA). As soon as we become aware of illegal content, we remove it without delay.",
+ "imp.h.links": "Liability for links",
+ "imp.links": "Our service contains links to external third-party websites whose content we have no influence over. The respective provider or operator is always responsible for the content of linked pages. If we become aware of any legal violations, we will remove the links concerned without delay.",
+ "imp.h.copy": "Copyright",
+ "imp.copy": "The content and works we have created on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of use outside the limits of copyright law require our written consent."
+}

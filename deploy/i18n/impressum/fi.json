@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Käännös",
+ "advisory.body": "Tämä on käännös helpottamaan lukemista. Vain näiden oikeudellisten tietojen <strong>saksankielinen versio</strong> on oikeudellisesti sitova. <a href=\"#\" data-show-de>Näytä saksankielinen versio</a>",
+ "imp.eyebrow": "Pakolliset tiedot § 5 DDG:n mukaisesti",
+ "imp.updated": "Päivitetty viimeksi: 7. lokakuuta 2026",
+ "imp.h.provider": "Palveluntarjoaja",
+ "imp.legalform": "Toiminimi (pienyritys)",
+ "imp.country": "Saksa",
+ "imp.h.contact": "Yhteystiedot",
+ "imp.email": "Sähköposti",
+ "imp.h.responsible": "Sisällöstä vastaava § 18 (2) MStV:n mukaisesti",
+ "imp.responsible": "David Rallo, osoite kuten yllä",
+ "imp.h.dsa": "Yhteyspiste digipalvelusäädöksen mukaisesti",
+ "imp.dsa": "Viranomaisten ja käyttäjien keskitetty yhteyspiste asetuksen (EU) 2022/2065 (Digital Services Act) 11 ja 12 artiklan mukaisesti: <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Yhteydenotot voi tehdä saksaksi, englanniksi tai italiaksi.",
+ "imp.h.adr": "Kuluttajariitojen ratkaiseminen",
+ "imp.adr": "Emme ole halukkaita emmekä velvollisia osallistumaan riitojenratkaisumenettelyyn kuluttajariitalautakunnassa (§ 36 VSBG).",
+ "imp.h.liab": "Vastuu sisällöstä",
+ "imp.liab": "Vastaamme omasta sisällöstämme näillä sivuilla yleisen lainsäädännön mukaisesti. Kolmansien osapuolten tietoihin, jotka ainoastaan välitämme tai tallennamme (esimerkiksi yhteisön julkaisut sovelluksessa), sovelletaan asetuksen (EU) 2022/2065 (Digital Services Act) 4–6 artiklan vastuusääntöjä. Yleistä velvollisuutta valvoa tällaisia tietoja ei ole (DSA 8 artikla). Heti kun saamme tiedon laittomasta sisällöstä, poistamme sen viipymättä.",
+ "imp.h.links": "Vastuu linkeistä",
+ "imp.links": "Palvelumme sisältää linkkejä kolmansien osapuolten ulkoisille verkkosivustoille, joiden sisältöön emme voi vaikuttaa. Linkitettyjen sivujen sisällöstä vastaa aina kyseinen palveluntarjoaja tai ylläpitäjä. Jos saamme tiedon lainvastaisuuksista, poistamme kyseiset linkit viipymättä.",
+ "imp.h.copy": "Tekijänoikeus",
+ "imp.copy": "Näillä sivuilla luomamme sisältö ja teokset kuuluvat Saksan tekijänoikeuslainsäädännön piiriin. Kopiointi, muokkaaminen, levittäminen ja kaikenlainen käyttö tekijänoikeuden rajojen ulkopuolella edellyttävät kirjallista suostumustamme."
+}

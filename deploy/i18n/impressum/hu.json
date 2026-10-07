@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Fordítás",
+ "advisory.body": "Ez a fordítás a kényelmedet szolgálja. Ezeknek a jogi információknak csak a <strong>német változata</strong> jogilag kötelező érvényű. <a href=\"#\" data-show-de>A német változat megjelenítése</a>",
+ "imp.eyebrow": "Kötelező adatok a § 5 DDG szerint",
+ "imp.updated": "Utolsó frissítés: 2026. október 7.",
+ "imp.h.provider": "Szolgáltató",
+ "imp.legalform": "Egyéni vállalkozás (kisvállalkozás)",
+ "imp.country": "Németország",
+ "imp.h.contact": "Kapcsolat",
+ "imp.email": "E-mail",
+ "imp.h.responsible": "A tartalomért felelős a § 18 (2) MStV szerint",
+ "imp.responsible": "David Rallo, cím: lásd fent",
+ "imp.h.dsa": "Kapcsolattartó pont a digitális szolgáltatásokról szóló rendelet szerint",
+ "imp.dsa": "Egyedüli kapcsolattartó pont a hatóságok és a felhasználók számára az (EU) 2022/2065 rendelet (Digital Services Act) 11. és 12. cikke szerint: <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Megkeresés németül, angolul vagy olaszul küldhető.",
+ "imp.h.adr": "Fogyasztói jogviták rendezése",
+ "imp.adr": "Nem állunk készen és nem is vagyunk kötelesek részt venni fogyasztói békéltető testület előtti vitarendezési eljárásban (§ 36 VSBG).",
+ "imp.h.liab": "Felelősség a tartalmakért",
+ "imp.liab": "Az oldalakon található saját tartalmainkért az általános jogszabályok szerint felelünk. Azokra a harmadik féltől származó információkra, amelyeket csak továbbítunk vagy tárolunk (például a közösség bejegyzései az alkalmazásban), az (EU) 2022/2065 rendelet (Digital Services Act) 4–6. cikkének felelősségi szabályai vonatkoznak. Az ilyen információk ellenőrzésére nincs általános kötelezettség (DSA 8. cikk). Amint jogellenes tartalomról szerzünk tudomást, azt haladéktalanul eltávolítjuk.",
+ "imp.h.links": "Felelősség a hivatkozásokért",
+ "imp.links": "Szolgáltatásunk harmadik felek külső weboldalaira mutató hivatkozásokat tartalmaz, amelyek tartalmára nincs befolyásunk. A hivatkozott oldalak tartalmáért mindig az adott szolgáltató vagy üzemeltető felel. Ha jogsértésről szerzünk tudomást, az érintett hivatkozásokat haladéktalanul eltávolítjuk.",
+ "imp.h.copy": "Szerzői jog",
+ "imp.copy": "Az általunk ezeken az oldalakon létrehozott tartalmakra és művekre a német szerzői jog vonatkozik. A szerzői jog keretein túli többszörözéshez, átdolgozáshoz, terjesztéshez és bármilyen felhasználáshoz írásos hozzájárulásunk szükséges."
+}
