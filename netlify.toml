@@ -1,8 +1,9 @@
 # ============================================================
 # Netlify — sito pubblico myrootsy.com
 # ============================================================
-# Il sito è fatto di file HTML pronti: Netlify pubblica la cartella deploy/
-# così com'è, senza "build".
+# Il sito è fatto di file HTML pronti. Prima di pubblicare la cartella deploy/,
+# Netlify crea una pagina per ogni lingua (deploy/de/, deploy/en/ ...) con
+# scripts/build-lang-pages.mjs: così Google trova il sito in tutte le 31 lingue.
 #
 #   - modifica salvata sul ramo "main"        → va online su myrootsy.com
 #   - proposta di modifica (Pull Request)     → link di ANTEPRIMA da controllare
@@ -10,7 +11,7 @@
 
 [build]
   publish = "deploy"
-  command = "echo 'Sito statico: niente da costruire'"
+  command = "node scripts/build-lang-pages.mjs"
 
 # Collegamenti alle app (Apple / Android): devono essere letti come JSON
 [[headers]]
