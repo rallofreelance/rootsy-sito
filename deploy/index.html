@@ -1608,7 +1608,7 @@ var LANG_META = {
   let saved=null;
   try { saved=localStorage.getItem('rootsy-landing-lang'); } catch(e){}
   const avail=LANGS;
-  const browser=(navigator.language||'en').split('-')[0];
+  let browser=(navigator.language||'en').split('-')[0].toLowerCase(); if(browser==='no'||browser==='nn') browser='nb';
   const initial=(saved && avail.includes(saved)) ? saved : (avail.includes(browser) ? browser : 'it');
   applyLang(initial);
   // Mostra SEMPRE il welcome lingua all'ingresso (richiesta David)
