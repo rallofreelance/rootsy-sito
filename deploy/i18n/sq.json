@@ -156,6 +156,7 @@
  "gemini.premium.l5": "Shton takimet në Google Calendar tënd",
  "gemini.premium.l6": "Përgatit çfarë të thuash në telefon në gjermanisht/kinezisht/arabisht",
  "gemini.google": "E integruar me botën Google: Calendar për takime, Maps për drejtime, Gmail për skica, Translate për detajet. Gjithçka e orkestruar nga AI-ja Gemini.",
+ "gemini.disclaimer": "ℹ️ Asistenti AI të udhëzon dhe përkthen për ty, por nuk zëvendëson këshillën e një profesionisti (avokat, këshilltar tatimor, mjek) as informacionet zyrtare të autoriteteve.",
  "nav.ai": "AI",
  "nav.how": "Si funksionon",
  "nav.features": "Veçoritë",

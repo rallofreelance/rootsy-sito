@@ -156,6 +156,7 @@
  "gemini.premium.l5": "Randevuları Google Calendar'ına ekler",
  "gemini.premium.l6": "Telefonda Almanca/Çince/Arapça ne diyeceğini hazırlar",
  "gemini.google": "Google dünyasıyla entegre: randevular için Calendar, yol tarifi için Maps, taslaklar için Gmail, ayrıntılar için Translate. Hepsi Gemini yapay zekâsı tarafından yönetilir.",
+ "gemini.disclaimer": "ℹ️ Yapay zekâ asistanı sana yol gösterir ve çeviri yapar, ancak bir uzmanın (avukat, mali müşavir, doktor) tavsiyesinin ya da resmî makamların bilgilerinin yerini tutmaz.",
  "nav.ai": "YZ",
  "nav.how": "Nasıl çalışır",
  "nav.features": "Özellikler",

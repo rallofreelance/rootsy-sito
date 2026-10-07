@@ -156,6 +156,7 @@
  "gemini.premium.l5": "Adds appointments to your Google Calendar",
  "gemini.premium.l6": "Prepares what to say on the phone in German/Chinese/Arabic",
  "gemini.google": "Integrated with the Google world: Calendar for appointments, Maps for directions, Gmail for drafts, Translate for the details. All orchestrated by Gemini AI.",
+ "gemini.disclaimer": "ℹ️ The AI assistant guides you and translates, but it does not replace advice from a professional (lawyer, tax advisor, doctor) or official information from the authorities.",
  "nav.ai": "AI",
  "nav.how": "How it works",
  "nav.features": "Features",

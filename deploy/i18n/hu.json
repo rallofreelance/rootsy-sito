@@ -156,6 +156,7 @@
  "gemini.premium.l5": "Felveszi az időpontokat a Google Calendarodba",
  "gemini.premium.l6": "Előkészíti, mit mondj telefonon németül/kínaiul/arabul",
  "gemini.google": "Összekapcsolva a Google világával: Calendar az időpontokhoz, Maps az útvonalakhoz, Gmail a piszkozatokhoz, Translate a részletekhez. Mindent a Gemini MI vezérel.",
+ "gemini.disclaimer": "ℹ️ Az AI-asszisztens eligazít és fordít neked, de nem helyettesíti szakember (ügyvéd, adótanácsadó, orvos) tanácsát, sem a hatóságok hivatalos tájékoztatását.",
  "nav.ai": "MI",
  "nav.how": "Hogyan működik",
  "nav.features": "Funkciók",

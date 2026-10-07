@@ -156,6 +156,7 @@
  "gemini.premium.l5": "Lisää tapaamiset Google Calendariisi",
  "gemini.premium.l6": "Valmistelee, mitä sanot puhelimessa saksaksi/kiinaksi/arabiaksi",
  "gemini.google": "Integroitu Googlen maailmaan: Calendar tapaamisiin, Maps reitteihin, Gmail luonnoksiin, Translate yksityiskohtiin. Kaikkea ohjaa Gemini AI.",
+ "gemini.disclaimer": "ℹ️ Tekoälyavustaja opastaa ja kääntää, mutta se ei korvaa asiantuntijan (juristin, veroneuvojan, lääkärin) neuvoja eikä viranomaisten virallista tietoa.",
  "nav.ai": "Tekoäly",
  "nav.how": "Näin se toimii",
  "nav.features": "Ominaisuudet",
