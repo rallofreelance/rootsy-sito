@@ -1,7 +1,7 @@
 # ============================================================
 # Netlify — sito pubblico myrootsy.com
 # ============================================================
-# Il sito è fatto di file HTML pronti: Netlify pubblica questa cartella
+# Il sito è fatto di file HTML pronti: Netlify pubblica la cartella deploy/
 # così com'è, senza "build".
 #
 #   - modifica salvata sul ramo "main"        → va online su myrootsy.com
@@ -9,21 +9,8 @@
 # ============================================================
 
 [build]
-  publish = "."
+  publish = "deploy"
   command = "echo 'Sito statico: niente da costruire'"
-
-# README e questo file non servono ai visitatori
-[[redirects]]
-  from = "/README.md"
-  to = "/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/netlify.toml"
-  to = "/"
-  status = 301
-  force = true
 
 # Collegamenti alle app (Apple / Android): devono essere letti come JSON
 [[headers]]

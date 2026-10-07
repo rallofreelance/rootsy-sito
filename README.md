@@ -12,10 +12,12 @@ Questo repository contiene **solo il sito pubblico** https://myrootsy.com
 
 ## File principali
 
+Tutti i file del sito sono nella cartella `deploy/`.
+
 | File | Cosa contiene |
 | --- | --- |
-| `index.html` | La pagina principale, con tutte le traduzioni |
-| `privacy.html`, `terms.html`, `cookies.html`, `impressum.html` | Pagine legali |
-| `_legal-i18n.js` | Traduzioni dei menu delle pagine legali |
-| `og-image.png` / `og-image.svg` | Immagine che compare quando si condivide il link |
+| `deploy/index.html` | La pagina principale, con tutte le traduzioni |
+| `deploy/privacy.html`, `deploy/terms.html`, `deploy/cookies.html`, `deploy/impressum.html` | Pagine legali |
+| `deploy/_legal-i18n.js` | Traduzioni dei menu delle pagine legali |
+| `deploy/og-image.png` / `deploy/og-image.svg` | Immagine che compare quando si condivide il link |
 | `netlify.toml` | Impostazioni di pubblicazione |
