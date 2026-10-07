@@ -643,6 +643,52 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
   .rmap-stage > g{ opacity:1 !important; }
 }
 </style>
+
+<style>
+/* ====== Riassunto "Rootsy in breve" + indice sezioni (ottobre 2026) ====== */
+html { scroll-padding-top: calc(var(--navH, 64px) + 60px); }
+.hero-sum { margin: 26px auto 24px; width: 100%; max-width: 580px; text-align: start;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-radius: 20px;
+  padding: 18px 20px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.hero-sum-title, .jump-title { font-size: 12px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;
+  color: #FFB28F; margin: 0 0 12px; }
+.hero-sum-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.hero-sum-list li { display: flex; gap: 12px; align-items: flex-start; color: rgba(255,255,255,.9);
+  font-size: 15px; line-height: 1.45; }
+.hs-ico { flex: 0 0 auto; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px;
+  background: rgba(255,255,255,.09); font-size: 16px; line-height: 1; }
+.jump { margin: 28px auto 4px; width: 100%; max-width: 820px; }
+.jump-title { text-align: center; }
+.jump-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.jump-tile { display: flex; align-items: center; gap: 10px; min-height: 54px; padding: 12px 14px;
+  border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16);
+  color: #fff; text-decoration: none; font-weight: 700; font-size: 14.5px; line-height: 1.25; text-align: start;
+  transition: background .2s, border-color .2s, transform .2s; }
+.jump-tile:hover, .jump-tile:focus-visible { background: rgba(255,107,53,.20); border-color: rgba(255,138,77,.65);
+  transform: translateY(-2px); outline: none; }
+.jt-ico { font-size: 18px; line-height: 1; flex: 0 0 auto; }
+@media (max-width: 760px) { .jump-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) {
+  .hero-sum { padding: 16px 16px; border-radius: 18px; }
+  .hero-sum-list li { font-size: 14.5px; }
+  .jump-tile { font-size: 14px; padding: 11px 12px; }
+}
+/* barra fissa */
+.jump-bar { position: fixed; left: 0; right: 0; top: var(--navH, 64px); z-index: 98;
+  background: rgba(254,249,246,.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border, #E5E7EB);
+  transform: translateY(-120%); opacity: 0; pointer-events: none; transition: transform .3s ease, opacity .3s ease; }
+.jump-bar.show { transform: none; opacity: 1; pointer-events: auto; }
+.jump-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 9px 14px; max-width: 1180px; margin: 0 auto;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.jump-bar-inner::-webkit-scrollbar { display: none; }
+.jump-chip { flex: 0 0 auto; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border, #E5E7EB);
+  background: #fff; color: var(--text, #1a1a1a); font-size: 13px; font-weight: 700; text-decoration: none;
+  white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
+.jump-chip:hover { border-color: var(--orange, #FF6B35); color: var(--orange, #FF6B35); }
+.jump-chip.active { background: var(--orange, #FF6B35); border-color: var(--orange, #FF6B35); color: #fff; }
+body.menu-open .jump-bar { opacity: 0; pointer-events: none; }
+</style>
 </head>
 <body>
 
@@ -694,11 +740,11 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
   <div class="nav-links">
     <a href="#how" data-i18n="nav.how">Come funziona</a>
     <a href="#features" data-i18n="nav.features">Funzionalità</a>
-    <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
-    <a href="#stories" data-i18n="nav.stories">Storie</a>
+    <a href="#manifesto" class="audience-only audience-private" data-i18n="nav.manifesto">Manifesto</a>
+    <a href="#stories" class="audience-only audience-private" data-i18n="nav.stories">Storie</a>
     <a href="#pricing" data-i18n="nav.pricing">Piani</a>
-    <a href="#ai" data-i18n="nav.ai">AI</a>
-    <a href="#expat" data-i18n="nav.expat">Espatrio</a>
+    <a href="#ai" class="audience-only audience-private" data-i18n="nav.ai">AI</a>
+    <a href="#expat" class="audience-only audience-private" data-i18n="nav.expat">Espatrio</a>
     <a href="#faq">FAQ</a>
   </div>
   <div class="nav-right">
@@ -719,14 +765,38 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
 <aside class="nav-drawer" id="navDrawer">
   <a href="#how"       data-i18n="nav.how"       onclick="closeMenu()">Come funziona</a>
   <a href="#features"  data-i18n="nav.features"  onclick="closeMenu()">Funzionalità</a>
-  <a href="#manifesto" data-i18n="nav.manifesto" onclick="closeMenu()">Manifesto</a>
-  <a href="#stories"   data-i18n="nav.stories"   onclick="closeMenu()">Storie</a>
+  <a href="#manifesto" class="audience-only audience-private" data-i18n="nav.manifesto" onclick="closeMenu()">Manifesto</a>
+  <a href="#stories"   class="audience-only audience-private" data-i18n="nav.stories"   onclick="closeMenu()">Storie</a>
   <a href="#pricing"   data-i18n="nav.pricing"   onclick="closeMenu()">Piani</a>
-  <a href="#ai"        data-i18n="nav.ai"        onclick="closeMenu()">AI</a>
-  <a href="#expat"     data-i18n="nav.expat"     onclick="closeMenu()">Espatrio</a>
+  <a href="#ai"        class="audience-only audience-private" data-i18n="nav.ai"        onclick="closeMenu()">AI</a>
+  <a href="#expat"     class="audience-only audience-private" data-i18n="nav.expat"     onclick="closeMenu()">Espatrio</a>
   <a href="#faq"       onclick="closeMenu()">FAQ</a>
+  <a href="#biz-hero" class="audience-only audience-business" data-i18n="jump.bizBenefits" onclick="closeMenu()">Vantaggi</a>
+  <a href="#biz-expanded" class="audience-only audience-business" data-i18n="jump.bizWhy" onclick="closeMenu()">Perché funziona</a>
+  <a href="#biz-faq" class="audience-only audience-business" data-i18n="bizx.faq.title" onclick="closeMenu()">Domande dei locali</a>
+  <a href="#biz" class="audience-only audience-business" data-i18n="jump.bizJoin" onclick="closeMenu()">Iscrivi la tua attività</a>
   <button class="nav-drawer-cta" data-i18n="nav.cta" onclick="closeMenu(); window.location.href='#beta'">Inizia gratis</button>
 </aside>
+
+<!-- ====== BARRA SEZIONI (compare quando si scorre oltre l'intestazione) ====== -->
+<div class="jump-bar" id="jumpBar" role="navigation" aria-label="Sezioni">
+  <div class="jump-bar-inner">
+    <a class="jump-chip audience-only audience-private" href="#manifesto"><span data-i18n="nav.manifesto">Manifesto</span></a>
+    <a class="jump-chip audience-only audience-private" href="#how"><span data-i18n="nav.how">Come funziona</span></a>
+    <a class="jump-chip audience-only audience-private" href="#features"><span data-i18n="nav.features">Funzionalità</span></a>
+    <a class="jump-chip audience-only audience-private" href="#stories"><span data-i18n="nav.stories">Storie</span></a>
+    <a class="jump-chip audience-only audience-private" href="#expat"><span data-i18n="nav.expat">Espatrio</span></a>
+    <a class="jump-chip audience-only audience-private" href="#ai"><span data-i18n="nav.ai">AI</span></a>
+    <a class="jump-chip audience-only audience-private" href="#pricing"><span data-i18n="nav.pricing">Piani</span></a>
+    <a class="jump-chip audience-only audience-private" href="#faq"><span>FAQ</span></a>
+    <a class="jump-chip audience-only audience-business" href="#biz-hero"><span data-i18n="jump.bizBenefits">Vantaggi</span></a>
+    <a class="jump-chip audience-only audience-business" href="#biz-expanded"><span data-i18n="jump.bizWhy">Perché funziona</span></a>
+    <a class="jump-chip audience-only audience-business" href="#how"><span data-i18n="nav.how">Come funziona</span></a>
+    <a class="jump-chip audience-only audience-business" href="#features"><span data-i18n="nav.features">Funzionalità</span></a>
+    <a class="jump-chip audience-only audience-business" href="#biz-faq"><span data-i18n="bizx.faq.title">Domande dei locali</span></a>
+    <a class="jump-chip audience-only audience-business" href="#biz"><span data-i18n="jump.bizJoin">Iscrivi la tua attività</span></a>
+  </div>
+</div>
 
 <!-- ====== HERO ====== -->
 <header class="hero" id="top">
@@ -747,9 +817,42 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
   <p class="tm-line">Rootsy<sup style="font-size:0.5em;opacity:0.7;margin-left:2px;">™</sup></p>
   <p class="lead audience-only audience-private" data-i18n="hero.lead">L'app che parla la tua lingua e conosce la tua cultura. Per chi viaggia, per chi mette radici. In 31 lingue.</p>
   <p class="lead audience-only audience-business" data-i18n="hero.leadBusiness">Fatti trovare da chi cerca proprio te: persone della tua lingua e della tua cultura, già nella tua città. Iscrizione gratuita al lancio.</p>
+  <div class="hero-sum" role="region" aria-labelledby="heroSumTitle">
+    <p class="hero-sum-title" id="heroSumTitle" data-i18n="sum.title">Rootsy in breve</p>
+    <ul class="hero-sum-list audience-only audience-private">
+      <li><span class="hs-ico" aria-hidden="true">🗺️</span><span data-i18n="sum.p1">Trovi ristoranti, medici, negozi e comunità dove parlano la tua lingua e conoscono la tua cultura.</span></li>
+      <li><span class="hs-ico" aria-hidden="true">✅</span><span data-i18n="sum.p2">È la community a confermare i posti: pin verde = confermato da almeno 3 persone.</span></li>
+      <li><span class="hs-ico" aria-hidden="true">🧳</span><span data-i18n="sum.p3">In vacanza o trasferito all'estero: checklist per i primi 90 giorni, assistente AI e tasto SOS.</span></li>
+      <li><span class="hs-ico" aria-hidden="true">🆓</span><span data-i18n="sum.p4">Gratis per iniziare, in 31 lingue. Primo lancio a Berlino.</span></li>
+    </ul>
+    <ul class="hero-sum-list audience-only audience-business">
+      <li><span class="hs-ico" aria-hidden="true">📍</span><span data-i18n="sum.b1">Ti trovano persone che cercano la tua lingua e la tua cultura, già nella tua città.</span></li>
+      <li><span class="hs-ico" aria-hidden="true">⭐</span><span data-i18n="sum.b2">Profilo verificato dalla community, messo in evidenza, con le tue statistiche.</span></li>
+      <li><span class="hs-ico" aria-hidden="true">🆓</span><span data-i18n="sum.b3">Iscrizione gratuita al lancio.</span></li>
+    </ul>
+  </div>
   <div class="hero-ctas">
     <button class="btn-primary" data-i18n="hero.ctaPrimary" onclick="window.location.href='#beta'">Inizia gratis</button>
     <a href="#how" class="btn-outline" data-i18n="hero.ctaSecondary">Scopri come funziona</a>
+  </div>
+  <div class="jump" role="navigation" aria-labelledby="jumpTitle">
+    <p class="jump-title" id="jumpTitle" data-i18n="jump.title">Vai direttamente a</p>
+    <div class="jump-grid">
+      <a class="jump-tile audience-only audience-private" href="#manifesto"><span class="jt-ico" aria-hidden="true">🌍</span><span data-i18n="nav.manifesto">Manifesto</span></a>
+      <a class="jump-tile audience-only audience-private" href="#how"><span class="jt-ico" aria-hidden="true">🧭</span><span data-i18n="nav.how">Come funziona</span></a>
+      <a class="jump-tile audience-only audience-private" href="#features"><span class="jt-ico" aria-hidden="true">✨</span><span data-i18n="nav.features">Funzionalità</span></a>
+      <a class="jump-tile audience-only audience-private" href="#stories"><span class="jt-ico" aria-hidden="true">💬</span><span data-i18n="nav.stories">Storie</span></a>
+      <a class="jump-tile audience-only audience-private" href="#expat"><span class="jt-ico" aria-hidden="true">🧳</span><span data-i18n="nav.expat">Espatrio</span></a>
+      <a class="jump-tile audience-only audience-private" href="#ai"><span class="jt-ico" aria-hidden="true">🤖</span><span data-i18n="nav.ai">AI</span></a>
+      <a class="jump-tile audience-only audience-private" href="#pricing"><span class="jt-ico" aria-hidden="true">🏷️</span><span data-i18n="nav.pricing">Piani</span></a>
+      <a class="jump-tile audience-only audience-private" href="#faq"><span class="jt-ico" aria-hidden="true">❓</span><span>FAQ</span></a>
+      <a class="jump-tile audience-only audience-business" href="#biz-hero"><span class="jt-ico" aria-hidden="true">📍</span><span data-i18n="jump.bizBenefits">Vantaggi</span></a>
+      <a class="jump-tile audience-only audience-business" href="#biz-expanded"><span class="jt-ico" aria-hidden="true">📈</span><span data-i18n="jump.bizWhy">Perché funziona</span></a>
+      <a class="jump-tile audience-only audience-business" href="#how"><span class="jt-ico" aria-hidden="true">🧭</span><span data-i18n="nav.how">Come funziona</span></a>
+      <a class="jump-tile audience-only audience-business" href="#features"><span class="jt-ico" aria-hidden="true">✨</span><span data-i18n="nav.features">Funzionalità</span></a>
+      <a class="jump-tile audience-only audience-business" href="#biz-faq"><span class="jt-ico" aria-hidden="true">❓</span><span data-i18n="bizx.faq.title">Domande dei locali</span></a>
+      <a class="jump-tile audience-only audience-business" href="#biz"><span class="jt-ico" aria-hidden="true">📝</span><span data-i18n="jump.bizJoin">Iscrivi la tua attività</span></a>
+    </div>
   </div>
   <div class="social-proof">
     <div class="avatars">
@@ -854,7 +957,7 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
   <p class="bizx-disclaimer" data-i18n="bizx.disclaimer">⚠ Esempi illustrativi basati su proiezioni del modello di business. I risultati reali dipendono da posizione, settore, qualità del servizio e attività sulla piattaforma.</p>
 
   <div class="bizx-faq">
-    <h3 class="bizx-faq-title" data-i18n="bizx.faq.title">Domande dei locali</h3>
+    <h3 class="bizx-faq-title" id="biz-faq" data-i18n="bizx.faq.title">Domande dei locali</h3>
 
     <details class="bizx-faq-item">
       <summary data-i18n="bizx.faq.q1">Quanto costa il piano Business?</summary>
@@ -1417,6 +1520,18 @@ nav.nav-over-hero .lang-dd-btn{ background:rgba(255,255,255,.12); border-color:r
 // === I18N — 6 lingue (EN/IT/DE/FR/ES/AR) ===
 const I18N = {
   en: {
+    "sum.title": "Rootsy at a glance",
+    "sum.p1": "Find restaurants, doctors, shops and communities that speak your language and know your culture.",
+    "sum.p2": "The community confirms every place: a green pin means at least 3 people confirmed it.",
+    "sum.p3": "On holiday or moving abroad: a checklist for your first 90 days, an AI assistant and an SOS button.",
+    "sum.p4": "Free to start, in 31 languages. First launch in Berlin.",
+    "sum.b1": "People looking for your language and culture find you, right in your city.",
+    "sum.b2": "A community-verified profile, featured, with your own statistics.",
+    "sum.b3": "Free sign-up at launch.",
+    "jump.title": "Jump straight to",
+    "jump.bizBenefits": "Benefits",
+    "jump.bizWhy": "Why it works",
+    "jump.bizJoin": "List your business",
     'aud.private': 'People & Travelers', 'aud.business': 'Venues & Business',
     'aud.badgePrivate': 'Private mode', 'aud.badgeBusiness': 'Business mode',
     'founder.linkedin': 'Connect on LinkedIn',
@@ -1652,6 +1767,18 @@ const I18N = {
     'footer.madeIn': 'Made in Germany 🇩🇪 with care'
   },
   it: {
+    "sum.title": "Rootsy in breve",
+    "sum.p1": "Trovi ristoranti, medici, negozi e comunità dove parlano la tua lingua e conoscono la tua cultura.",
+    "sum.p2": "È la community a confermare i posti: pin verde = confermato da almeno 3 persone.",
+    "sum.p3": "In vacanza o trasferito all'estero: checklist per i primi 90 giorni, assistente AI e tasto SOS.",
+    "sum.p4": "Gratis per iniziare, in 31 lingue. Primo lancio a Berlino.",
+    "sum.b1": "Ti trovano persone che cercano la tua lingua e la tua cultura, già nella tua città.",
+    "sum.b2": "Profilo verificato dalla community, messo in evidenza, con le tue statistiche.",
+    "sum.b3": "Iscrizione gratuita al lancio.",
+    "jump.title": "Vai direttamente a",
+    "jump.bizBenefits": "Vantaggi",
+    "jump.bizWhy": "Perché funziona",
+    "jump.bizJoin": "Iscrivi la tua attività",
     'aud.private': 'Privati & Viaggiatori', 'aud.business': 'Locali & Business',
     'aud.badgePrivate': 'Modalità Privati', 'aud.badgeBusiness': 'Modalità Business',
     'founder.linkedin': 'Connetti su LinkedIn',
@@ -1887,6 +2014,18 @@ const I18N = {
     'footer.madeIn': 'Made in Germany 🇩🇪 con cura'
   },
   de: {
+    "sum.title": "Rootsy auf einen Blick",
+    "sum.p1": "Finde Restaurants, Ärzte, Geschäfte und Gemeinschaften, die deine Sprache sprechen und deine Kultur kennen.",
+    "sum.p2": "Die Community bestätigt die Orte: grüner Pin = von mindestens 3 Personen bestätigt.",
+    "sum.p3": "Im Urlaub oder beim Umzug ins Ausland: Checkliste für die ersten 90 Tage, KI-Assistent und SOS-Taste.",
+    "sum.p4": "Kostenlos zum Start, in 31 Sprachen. Erster Launch in Berlin.",
+    "sum.b1": "Menschen, die deine Sprache und Kultur suchen, finden dich – direkt in deiner Stadt.",
+    "sum.b2": "Von der Community verifiziertes Profil, hervorgehoben, mit deinen Statistiken.",
+    "sum.b3": "Kostenlose Anmeldung zum Start.",
+    "jump.title": "Direkt zu",
+    "jump.bizBenefits": "Vorteile",
+    "jump.bizWhy": "Warum es funktioniert",
+    "jump.bizJoin": "Betrieb eintragen",
     'aud.private': 'Privat & Reisende', 'aud.business': 'Lokale & Business',
     'aud.badgePrivate': 'Modus Privat', 'aud.badgeBusiness': 'Modus Business',
     'founder.linkedin': 'Auf LinkedIn vernetzen',
@@ -2122,6 +2261,18 @@ const I18N = {
     'footer.madeIn': 'Mit Sorgfalt in Deutschland 🇩🇪'
   },
   fr: {
+    "sum.title": "Rootsy en bref",
+    "sum.p1": "Trouvez restaurants, médecins, commerces et communautés qui parlent votre langue et connaissent votre culture.",
+    "sum.p2": "C'est la communauté qui confirme les lieux : épingle verte = confirmée par au moins 3 personnes.",
+    "sum.p3": "En vacances ou installé à l'étranger : une checklist pour les 90 premiers jours, un assistant IA et un bouton SOS.",
+    "sum.p4": "Gratuit pour commencer, en 31 langues. Premier lancement à Berlin.",
+    "sum.b1": "Les personnes qui cherchent votre langue et votre culture vous trouvent, dans votre ville.",
+    "sum.b2": "Un profil vérifié par la communauté, mis en avant, avec vos statistiques.",
+    "sum.b3": "Inscription gratuite au lancement.",
+    "jump.title": "Aller directement à",
+    "jump.bizBenefits": "Avantages",
+    "jump.bizWhy": "Pourquoi ça marche",
+    "jump.bizJoin": "Inscrire votre activité",
     'aud.private': 'Particuliers & Voyageurs', 'aud.business': 'Lieux & Entreprises',
     'aud.badgePrivate': 'Mode Privé', 'aud.badgeBusiness': 'Mode Business',
     'founder.linkedin': 'Se connecter sur LinkedIn',
@@ -2357,6 +2508,18 @@ const I18N = {
     'footer.madeIn': 'Fait en Allemagne 🇩🇪 avec soin'
   },
   es: {
+    "sum.title": "Rootsy en breve",
+    "sum.p1": "Encuentra restaurantes, médicos, tiendas y comunidades que hablan tu idioma y conocen tu cultura.",
+    "sum.p2": "La comunidad confirma los lugares: pin verde = confirmado por al menos 3 personas.",
+    "sum.p3": "De vacaciones o mudándote al extranjero: checklist para los primeros 90 días, asistente de IA y botón SOS.",
+    "sum.p4": "Gratis para empezar, en 31 idiomas. Primer lanzamiento en Berlín.",
+    "sum.b1": "Te encuentran personas que buscan tu idioma y tu cultura, ya en tu ciudad.",
+    "sum.b2": "Perfil verificado por la comunidad, destacado y con tus estadísticas.",
+    "sum.b3": "Registro gratuito en el lanzamiento.",
+    "jump.title": "Ir directamente a",
+    "jump.bizBenefits": "Ventajas",
+    "jump.bizWhy": "Por qué funciona",
+    "jump.bizJoin": "Registra tu negocio",
     'aud.private': 'Particulares & Viajeros', 'aud.business': 'Locales & Empresas',
     'aud.badgePrivate': 'Modo Privado', 'aud.badgeBusiness': 'Modo Business',
     'founder.linkedin': 'Conectar en LinkedIn',
@@ -2592,6 +2755,18 @@ const I18N = {
     'footer.madeIn': 'Hecho en Alemania 🇩🇪 con cariño'
   },
   ar: {
+    "sum.title": "Rootsy باختصار",
+    "sum.p1": "اعثر على مطاعم وأطباء ومتاجر ومجتمعات تتحدث لغتك وتعرف ثقافتك.",
+    "sum.p2": "المجتمع هو من يؤكد الأماكن: الدبوس الأخضر = أكّده 3 أشخاص على الأقل.",
+    "sum.p3": "في عطلة أو بعد الانتقال إلى الخارج: قائمة مهام لأول 90 يومًا، ومساعد ذكاء اصطناعي، وزر طوارئ SOS.",
+    "sum.p4": "مجاني للبدء، بـ 31 لغة. الإطلاق الأول في برلين.",
+    "sum.b1": "يجدك الأشخاص الذين يبحثون عن لغتك وثقافتك، في مدينتك نفسها.",
+    "sum.b2": "ملف موثّق من المجتمع، يظهر في المقدمة، مع إحصائياتك.",
+    "sum.b3": "التسجيل مجاني عند الإطلاق.",
+    "jump.title": "انتقل مباشرة إلى",
+    "jump.bizBenefits": "المزايا",
+    "jump.bizWhy": "لماذا ينجح",
+    "jump.bizJoin": "سجّل نشاطك التجاري",
     'aud.private': 'الخواص والمسافرون', 'aud.business': 'الأماكن والأعمال',
     'aud.badgePrivate': 'وضع الأفراد', 'aud.badgeBusiness': 'وضع الأعمال',
     'founder.linkedin': 'تواصل على LinkedIn',
@@ -2827,6 +3002,18 @@ const I18N = {
     'footer.madeIn': 'صُنع في ألمانيا 🇩🇪 بعناية'
   },
   ro: {
+    "sum.title": "Rootsy pe scurt",
+    "sum.p1": "Găsești restaurante, medici, magazine și comunități care vorbesc limba ta și îți cunosc cultura.",
+    "sum.p2": "Comunitatea confirmă locurile: pin verde = confirmat de cel puțin 3 persoane.",
+    "sum.p3": "În vacanță sau mutat în străinătate: checklist pentru primele 90 de zile, asistent AI și buton SOS.",
+    "sum.p4": "Gratuit la început, în 31 de limbi. Prima lansare la Berlin.",
+    "sum.b1": "Te găsesc oameni care caută limba și cultura ta, chiar în orașul tău.",
+    "sum.b2": "Profil verificat de comunitate, pus în evidență, cu statisticile tale.",
+    "sum.b3": "Înscriere gratuită la lansare.",
+    "jump.title": "Mergi direct la",
+    "jump.bizBenefits": "Avantaje",
+    "jump.bizWhy": "De ce funcționează",
+    "jump.bizJoin": "Înscrie-ți afacerea",
     "aud.private": "Persoane și călători",
     "aud.business": "Localuri și afaceri",
     "aud.badgePrivate": "وضع الأفراد",
@@ -3134,6 +3321,18 @@ const I18N = {
     "footer.madeIn": "Făcut în Germania 🇩🇪 cu grijă",
   },
   ru: {
+    "sum.title": "Rootsy коротко",
+    "sum.p1": "Находи рестораны, врачей, магазины и сообщества, где говорят на твоём языке и знают твою культуру.",
+    "sum.p2": "Места подтверждает сообщество: зелёная метка — подтвердили минимум 3 человека.",
+    "sum.p3": "В отпуске или при переезде за границу: чек-лист на первые 90 дней, ИИ-помощник и кнопка SOS.",
+    "sum.p4": "Бесплатно для начала, на 31 языке. Первый запуск — в Берлине.",
+    "sum.b1": "Тебя находят люди, которые ищут твой язык и культуру, — прямо в твоём городе.",
+    "sum.b2": "Профиль, проверенный сообществом, на видном месте и с твоей статистикой.",
+    "sum.b3": "Бесплатная регистрация при запуске.",
+    "jump.title": "Перейти сразу к",
+    "jump.bizBenefits": "Преимущества",
+    "jump.bizWhy": "Почему это работает",
+    "jump.bizJoin": "Добавить бизнес",
     "aud.private": "Люди и путешественники",
     "aud.business": "Заведения и бизнес",
     "aud.badgePrivate": "Mod Privați",
@@ -3431,6 +3630,18 @@ const I18N = {
     "footer.madeIn": "Сделано в Германии 🇩🇪 с заботой",
   },
   pl: {
+    "sum.title": "Rootsy w skrócie",
+    "sum.p1": "Znajdź restauracje, lekarzy, sklepy i społeczności, które mówią w twoim języku i znają twoją kulturę.",
+    "sum.p2": "To społeczność potwierdza miejsca: zielona pinezka = potwierdzone przez co najmniej 3 osoby.",
+    "sum.p3": "Na wakacjach lub po przeprowadzce za granicę: checklista na pierwsze 90 dni, asystent AI i przycisk SOS.",
+    "sum.p4": "Za darmo na start, w 31 językach. Pierwsze uruchomienie w Berlinie.",
+    "sum.b1": "Znajdą cię osoby, które szukają twojego języka i kultury — już w twoim mieście.",
+    "sum.b2": "Profil zweryfikowany przez społeczność, wyróżniony, z twoimi statystykami.",
+    "sum.b3": "Darmowa rejestracja przy starcie.",
+    "jump.title": "Przejdź od razu do",
+    "jump.bizBenefits": "Korzyści",
+    "jump.bizWhy": "Dlaczego to działa",
+    "jump.bizJoin": "Dodaj swoją firmę",
     "aud.private": "Osoby i podróżni",
     "aud.business": "Lokale i biznes",
     "aud.badgePrivate": "Режим Личный",
@@ -3728,6 +3939,18 @@ const I18N = {
     "footer.madeIn": "Zrobione w Niemczech 🇩🇪 z troską",
   },
   tr: {
+    "sum.title": "Kısaca Rootsy",
+    "sum.p1": "Dilini konuşan ve kültürünü bilen restoranları, doktorları, dükkânları ve toplulukları bul.",
+    "sum.p2": "Yerleri topluluk onaylar: yeşil iğne = en az 3 kişi tarafından onaylandı.",
+    "sum.p3": "Tatilde ya da yurt dışına taşınırken: ilk 90 gün için kontrol listesi, yapay zekâ asistanı ve SOS düğmesi.",
+    "sum.p4": "Başlamak ücretsiz, 31 dilde. İlk lansman Berlin'de.",
+    "sum.b1": "Dilini ve kültürünü arayan insanlar seni kendi şehrinde bulur.",
+    "sum.b2": "Topluluk tarafından doğrulanmış, öne çıkarılan ve istatistiklerini gösteren bir profil.",
+    "sum.b3": "Lansmanda ücretsiz kayıt.",
+    "jump.title": "Doğrudan git",
+    "jump.bizBenefits": "Avantajlar",
+    "jump.bizWhy": "Neden işe yarar",
+    "jump.bizJoin": "İşletmeni ekle",
     "aud.private": "Bireyler ve gezginler",
     "aud.business": "Mekânlar ve işletmeler",
     "aud.badgePrivate": "Tryb Prywatny",
@@ -4025,6 +4248,18 @@ const I18N = {
     "footer.madeIn": "Almanya'da 🇩🇪 özenle üretildi",
   },
   zh: {
+    "sum.title": "Rootsy 一览",
+    "sum.p1": "找到说你的语言、懂你的文化的餐厅、医生、商店和社区。",
+    "sum.p2": "地点由社区确认：绿色标记 = 至少 3 人确认过。",
+    "sum.p3": "度假或移居海外：前 90 天清单、AI 助手和 SOS 一键求助。",
+    "sum.p4": "免费开始使用，支持 31 种语言。首发城市：柏林。",
+    "sum.b1": "正在寻找你的语言和文化的人，会在你所在的城市找到你。",
+    "sum.b2": "经社区验证的主页，优先展示，并附带你的数据统计。",
+    "sum.b3": "上线时免费入驻。",
+    "jump.title": "直接跳转到",
+    "jump.bizBenefits": "优势",
+    "jump.bizWhy": "为什么有效",
+    "jump.bizJoin": "登记你的商家",
     "aud.private": "个人与旅行者",
     "aud.business": "场所与商家",
     "aud.badgePrivate": "Kişisel mod",
@@ -4322,6 +4557,18 @@ const I18N = {
     "footer.madeIn": "在德国 🇩🇪 用心打造",
   },
   fa: {
+    "sum.title": "Rootsy به‌طور خلاصه",
+    "sum.p1": "رستوران‌ها، پزشکان، فروشگاه‌ها و جامعه‌هایی را پیدا کن که به زبان تو صحبت می‌کنند و فرهنگت را می‌شناسند.",
+    "sum.p2": "مکان‌ها را جامعه تأیید می‌کند: پین سبز یعنی دست‌کم ۳ نفر تأییدش کرده‌اند.",
+    "sum.p3": "در سفر یا هنگام مهاجرت به خارج: چک‌لیست ۹۰ روز اول، دستیار هوش مصنوعی و دکمهٔ SOS.",
+    "sum.p4": "شروع رایگان، به ۳۱ زبان. اولین راه‌اندازی در برلین.",
+    "sum.b1": "کسانی که دنبال زبان و فرهنگ تو هستند، در همین شهر پیدایت می‌کنند.",
+    "sum.b2": "پروفایلی تأییدشده توسط جامعه، برجسته، همراه با آمار خودت.",
+    "sum.b3": "ثبت‌نام رایگان در زمان راه‌اندازی.",
+    "jump.title": "مستقیم برو به",
+    "jump.bizBenefits": "مزایا",
+    "jump.bizWhy": "چرا جواب می‌دهد",
+    "jump.bizJoin": "کسب‌وکارت را ثبت کن",
     "aud.private": "افراد و مسافران",
     "aud.business": "مکان‌ها و کسب‌وکارها",
     "aud.badgePrivate": "个人模式",
@@ -4619,6 +4866,18 @@ const I18N = {
     "footer.madeIn": "ساخت آلمان 🇩🇪 با دقت",
   },
   sq: {
+    "sum.title": "Rootsy shkurt",
+    "sum.p1": "Gjej restorante, mjekë, dyqane dhe komunitete që flasin gjuhën tënde dhe njohin kulturën tënde.",
+    "sum.p2": "Vendet i konfirmon komuniteti: kunja e gjelbër = e konfirmuar nga të paktën 3 persona.",
+    "sum.p3": "Me pushime apo i transferuar jashtë: listë kontrolli për 90 ditët e para, asistent AI dhe buton SOS.",
+    "sum.p4": "Falas për të filluar, në 31 gjuhë. Nisja e parë në Berlin.",
+    "sum.b1": "Të gjejnë njerëzit që kërkojnë gjuhën dhe kulturën tënde, në qytetin tënd.",
+    "sum.b2": "Profil i verifikuar nga komuniteti, i theksuar, me statistikat e tua.",
+    "sum.b3": "Regjistrim falas në nisje.",
+    "jump.title": "Shko direkt te",
+    "jump.bizBenefits": "Përfitimet",
+    "jump.bizWhy": "Pse funksionon",
+    "jump.bizJoin": "Regjistro biznesin",
     "aud.private": "Persona dhe udhëtarë",
     "aud.business": "Lokale dhe biznese",
     "aud.badgePrivate": "Modaliteti Privat",
@@ -5345,6 +5604,52 @@ window.goToBiz = function() {
       if(!reduced) loop(); else startStatic();
     };
   }
+})();
+</script>
+
+<script>
+/* Indice sezioni: barra fissa che compare dopo l'intestazione e segna la sezione in cui ti trovi */
+(function () {
+  var nav = document.querySelector('body > nav') || document.querySelector('nav');
+  var bar = document.getElementById('jumpBar');
+  var hero = document.getElementById('top');
+  if (!nav || !bar || !hero) return;
+  var inner = bar.querySelector('.jump-bar-inner');
+  var chips = [].slice.call(bar.querySelectorAll('.jump-chip'));
+  var current = null, ticking = false;
+
+  function setNavH() { document.documentElement.style.setProperty('--navH', nav.offsetHeight + 'px'); }
+  function centerChip(c) {
+    var cr = c.getBoundingClientRect(), ir = inner.getBoundingClientRect();
+    if (cr.left < ir.left + 12 || cr.right > ir.right - 12) {
+      inner.scrollBy({ left: (cr.left + cr.width / 2) - (ir.left + ir.width / 2), behavior: 'smooth' });
+    }
+  }
+  function update() {
+    ticking = false;
+    bar.classList.toggle('show', hero.getBoundingClientRect().bottom < nav.offsetHeight + 8);
+    var line = nav.offsetHeight + bar.offsetHeight + 30, active = null;
+    chips.forEach(function (c) {
+      if (c.offsetParent === null) return;                 // voce dell'altra modalità
+      var sec = document.querySelector(c.getAttribute('href'));
+      if (!sec || sec.offsetParent === null) return;
+      if (sec.getBoundingClientRect().top <= line) active = c;
+    });
+    if (active !== current) {
+      chips.forEach(function (c) { c.classList.toggle('active', c === active); });
+      current = active;
+      if (active && bar.classList.contains('show')) centerChip(active);
+    }
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+
+  setNavH();
+  window.addEventListener('resize', function () { setNavH(); onScroll(); });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  document.querySelectorAll('#audienceToggle .aud-btn').forEach(function (b) {
+    b.addEventListener('click', function () { current = null; setTimeout(update, 60); });
+  });
+  update();
 })();
 </script>
 </body>
