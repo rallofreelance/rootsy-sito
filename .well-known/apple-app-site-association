@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.myrootsy.app",
+        "paths": [
+          "/place/*",
+          "/u/*",
+          "/forum/*",
+          "/tribu",
+          "/business",
+          "/privacy",
+          "/terms",
+          "/cookies",
+          "NOT /admin/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.com.myrootsy.app"]
+  }
+}

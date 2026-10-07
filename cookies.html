@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it" translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="google" content="notranslate" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Policy — Rootsy</title>
+<link rel="icon" type="image/jpeg" href="rootsy-logo.jpg.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --orange: #FF6B35; --cream: #FEF9F6; --white: #FFFFFF; --text: #1a1a1a; --text-mid: #4B5563; --text-soft: #9CA3AF; --border: #E5E7EB; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: var(--cream); color: var(--text); line-height: 1.65; }
+  .legal-nav { padding: 18px 36px; background: rgba(254,249,246,0.95); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); }
+  .legal-nav a { color: var(--text); text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 10px; }
+  .legal-nav a em { color: var(--orange); font-style: normal; }
+  .legal-nav .back { margin-left: auto; font-size: 13px; font-weight: 600; color: var(--text-mid); }
+  .legal-nav .back:hover { color: var(--orange); }
+  .legal-lang { position: relative; }
+  .ldd-btn { background: white; border: 1px solid var(--border); padding: 7px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: all .2s; }
+  .ldd-btn:hover { border-color: var(--orange); }
+  .ldd-btn .ldd-flag { font-size: 16px; }
+  .ldd-btn .ldd-caret { font-size: 10px; opacity: .55; transition: transform .2s; }
+  .legal-lang.open .ldd-caret { transform: rotate(180deg); }
+  .ldd-menu { position: absolute; right: 0; top: calc(100% + 6px); min-width: 200px; max-height: 360px; overflow-y: auto; background: white; border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 14px 36px rgba(20,30,50,.12); padding: 6px; display: none; }
+  .legal-lang.open .ldd-menu { display: block; }
+  .ldd-item { display: flex; align-items: center; gap: 10px; width: 100%; padding: 9px 12px; background: transparent; border: 0; border-radius: 10px; cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--text); text-align: left; }
+  .ldd-item:hover { background: #FFF2ED; }
+  .ldd-item.active { background: var(--orange); color: white; }
+  .ldd-item .ldd-f { font-size: 16px; }
+  .legal-advisory { background: linear-gradient(135deg, #FFF2ED 0%, #FFE3D2 100%); border: 1px solid #FFD0B0; border-radius: 16px; padding: 18px 22px; margin: 24px 0 30px; }
+  .legal-advisory-title { font-size: 13px; font-weight: 800; color: var(--orange); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .legal-advisory-title::before { content: '⚠'; font-size: 16px; }
+  .legal-advisory-body { font-size: 14px; line-height: 1.6; color: var(--text-mid); }
+  .legal-advisory-body strong { color: var(--text); }
+  html[dir="rtl"] .legal-nav .back { margin-left: 0; margin-right: auto; }
+  html[dir="rtl"] .ldd-menu { right: auto; left: 0; }
+  main { max-width: 820px; margin: 0 auto; padding: 60px 28px 80px; }
+  .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--orange); text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: clamp(30px, 5vw, 48px); font-weight: 800; letter-spacing: -1.5px; margin-bottom: 14px; }
+  .updated { font-size: 13px; color: var(--text-soft); margin-bottom: 40px; }
+  h2 { font-size: 22px; font-weight: 800; margin: 36px 0 14px; color: var(--text); letter-spacing: -0.5px; }
+  h3 { font-size: 16px; font-weight: 700; margin: 22px 0 8px; color: var(--text); }
+  p, ul, ol { font-size: 15px; color: var(--text-mid); margin-bottom: 14px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--orange); }
+  strong { color: var(--text); font-weight: 700; }
+  .alert { background: #FFF2ED; border-left: 4px solid var(--orange); padding: 14px 18px; border-radius: 0 12px 12px 0; margin: 18px 0; font-size: 14px; color: var(--text); }
+  footer.foot { background: var(--text); color: rgba(255,255,255,0.7); padding: 30px 36px; font-size: 13px; text-align: center; margin-top: 60px; }
+  footer.foot a { color: var(--orange); }
+</style>
+</head>
+<body data-page="cookies">
+<nav class="legal-nav">
+  <a href="/"><span>R<em>oo</em>tsy</span></a>
+  <a href="/" class="back" data-i18n="nav.back">← Torna al sito</a>
+  <div id="legalDD" class="legal-lang">
+    <button id="legalDDBtn" class="ldd-btn" aria-haspopup="listbox" aria-expanded="false">
+      <span class="ldd-flag">🇮🇹</span><span class="ldd-code">IT</span><span class="ldd-caret">▾</span>
+    </button>
+    <div id="legalDDMenu" class="ldd-menu" role="listbox"></div>
+  </div>
+</nav>
+<main>
+  <p class="eyebrow" data-i18n="page.eyebrow">Documento legale</p>
+  <h1>Cookie Policy</h1>
+  <p class="updated">Ultimo aggiornamento: 9 maggio 2026</p>
+
+  <div class="legal-advisory">
+    <div class="legal-advisory-title" data-i18n="advisory.title">Traduzione di cortesia</div>
+    <div class="legal-advisory-body" data-i18n-html="advisory.body">Questo documento legale è fornito come <strong>traduzione di cortesia</strong>. La versione italiana resta la <strong>versione vincolante</strong>. Per una versione completa nella tua lingua scrivi a <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — la pubblicheremo entro 48h.</div>
+  </div>
+
+  <div class="alert">
+    <strong>In breve:</strong> Usiamo solo cookie tecnici essenziali e localStorage per ricordare la tua lingua e le tue preferenze. <strong>Niente cookie pubblicitari, niente tracciamento di terze parti</strong>.
+  </div>
+
+  <h2>1. Cosa sono i cookie</h2>
+  <p>I cookie sono piccoli file di testo salvati dal tuo browser. Permettono al sito di "ricordare" alcune preferenze tra una visita e l'altra.</p>
+
+  <h2>2. Cookie che usiamo</h2>
+
+  <h3>Cookie strettamente necessari (essential)</h3>
+  <ul>
+    <li><strong>rootsy-locale</strong> — Memorizza la lingua scelta (EN/DE/IT/AR). Scadenza: persistente.</li>
+    <li><strong>rootsy-cultures</strong> — Memorizza le culture scelte nell'onboarding. Scadenza: persistente.</li>
+    <li><strong>rootsy-onboarded</strong> — Flag che indica se hai completato il welcome. Scadenza: persistente.</li>
+    <li><strong>sb-*</strong> — Token di autenticazione Supabase. Scadenza: 30 giorni.</li>
+    <li><strong>rootsy-account-mode</strong> — Piano scelto (guest/basic/premium/business). Scadenza: persistente.</li>
+  </ul>
+  <p>Sono indispensabili al funzionamento: senza non puoi loggarti o salvare le tue preferenze. Non richiedono consenso preventivo (Art. 5(3) ePrivacy).</p>
+
+  <h3>Cookie di terze parti — solo tecnici</h3>
+  <ul>
+    <li><strong>Google Maps:</strong> usa cookie tecnici quando carichi la mappa. Vedi la <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Cookie Policy di Google</a>.</li>
+    <li><strong>Stripe:</strong> solo quando attivi Premium, per processare pagamenti in sicurezza. Vedi la <a href="https://stripe.com/cookies-policy/legal" target="_blank" rel="noopener">Cookie Policy di Stripe</a>.</li>
+  </ul>
+
+  <h2>3. Cookie che NON usiamo</h2>
+  <ul>
+    <li>❌ Pubblicità / advertising</li>
+    <li>❌ Profilazione comportamentale per inserzionisti</li>
+    <li>❌ Pixel di tracciamento social (Facebook, TikTok, ecc.)</li>
+    <li>❌ Vendita di dati a data broker</li>
+  </ul>
+
+  <h2>4. Come disabilitare i cookie</h2>
+  <p>Puoi sempre eliminare i cookie dal tuo browser:</p>
+  <ul>
+    <li>Chrome: Impostazioni → Privacy e sicurezza → Cookie e altri dati dei siti</li>
+    <li>Firefox: Impostazioni → Privacy e sicurezza → Cookie e dati dei siti web</li>
+    <li>Safari: Preferenze → Privacy → Gestisci dati siti web</li>
+  </ul>
+  <p><strong>Attenzione:</strong> disabilitando i cookie essenziali, Rootsy non funzionerà correttamente.</p>
+
+  <h2>5. Modifiche</h2>
+  <p>Aggiorneremo questa policy se introdurremo nuovi cookie. Ti avviseremo via email.</p>
+
+  <h2>6. Contatti</h2>
+  <p><a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a></p>
+</main>
+<footer class="foot" data-i18n-html="footer.copy">© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a></footer>
+<script src="_legal-i18n.js" defer></script>
+</body>
+</html>

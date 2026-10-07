@@ -1,0 +1,47 @@
+# ============================================================
+# Netlify — sito pubblico myrootsy.com
+# ============================================================
+# Il sito è fatto di file HTML pronti: Netlify pubblica questa cartella
+# così com'è, senza "build".
+#
+#   - modifica salvata sul ramo "main"        → va online su myrootsy.com
+#   - proposta di modifica (Pull Request)     → link di ANTEPRIMA da controllare
+# ============================================================
+
+[build]
+  publish = "."
+  command = "echo 'Sito statico: niente da costruire'"
+
+# README e questo file non servono ai visitatori
+[[redirects]]
+  from = "/README.md"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/"
+  status = 301
+  force = true
+
+# Collegamenti alle app (Apple / Android): devono essere letti come JSON
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "no-cache, max-age=0"
+
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "no-cache, max-age=0"
+
+# Protezioni di sicurezza standard per tutte le pagine
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
