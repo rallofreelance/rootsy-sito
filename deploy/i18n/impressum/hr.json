@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Prijevod",
+ "advisory.body": "Ovo je prijevod radi lakšeg snalaženja. Pravno je obvezujuća samo <strong>njemačka verzija</strong> ovih pravnih informacija. <a href=\"#\" data-show-de>Prikaži njemačku verziju</a>",
+ "imp.eyebrow": "Obvezni podaci prema § 5 DDG",
+ "imp.updated": "Posljednje ažuriranje: 7. listopada 2026.",
+ "imp.h.provider": "Pružatelj usluge",
+ "imp.legalform": "Obrt (malo poduzeće)",
+ "imp.country": "Njemačka",
+ "imp.h.contact": "Kontakt",
+ "imp.email": "E-pošta",
+ "imp.h.responsible": "Odgovoran za sadržaj prema § 18 st. 2 MStV",
+ "imp.responsible": "David Rallo, adresa kao gore",
+ "imp.h.dsa": "Kontaktna točka prema Aktu o digitalnim uslugama",
+ "imp.dsa": "Jedinstvena kontaktna točka za tijela i korisnike prema člancima 11. i 12. Uredbe (EU) 2022/2065 (Digital Services Act): <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Upiti se mogu slati na njemačkom, engleskom ili talijanskom.",
+ "imp.h.adr": "Rješavanje potrošačkih sporova",
+ "imp.adr": "Nismo spremni niti obvezni sudjelovati u postupcima rješavanja sporova pred tijelom za rješavanje potrošačkih sporova (§ 36 VSBG).",
+ "imp.h.liab": "Odgovornost za sadržaj",
+ "imp.liab": "Za vlastiti sadržaj na ovim stranicama odgovaramo prema općim zakonima. Za informacije trećih strana koje samo prenosimo ili pohranjujemo (primjerice objave zajednice u aplikaciji) vrijede pravila o odgovornosti iz članaka 4. do 6. Uredbe (EU) 2022/2065 (Digital Services Act). Ne postoji opća obveza nadzora takvih informacija (članak 8. DSA). Čim saznamo za nezakonit sadržaj, bez odgode ga uklanjamo.",
+ "imp.h.links": "Odgovornost za poveznice",
+ "imp.links": "Naša usluga sadrži poveznice na vanjske internetske stranice trećih strana na čiji sadržaj nemamo utjecaja. Za sadržaj povezanih stranica uvijek je odgovoran njihov pružatelj ili operater. Ako saznamo za kršenje zakona, odmah ćemo ukloniti te poveznice.",
+ "imp.h.copy": "Autorska prava",
+ "imp.copy": "Sadržaj i djela koja smo izradili na ovim stranicama podliježu njemačkom autorskom pravu. Umnožavanje, prerada, distribucija i svaki oblik korištenja izvan granica autorskog prava zahtijevaju našu pisanu suglasnost."
+}

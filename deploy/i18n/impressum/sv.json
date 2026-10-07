@@ -1,0 +1,23 @@
+{
+ "advisory.title": "Översättning",
+ "advisory.body": "Detta är en översättning för din bekvämlighet. Endast den <strong>tyska versionen</strong> av denna juridiska information är juridiskt bindande. <a href=\"#\" data-show-de>Visa den tyska versionen</a>",
+ "imp.eyebrow": "Obligatoriska uppgifter enligt § 5 DDG",
+ "imp.updated": "Senast uppdaterad: 7 oktober 2026",
+ "imp.h.provider": "Tjänsteleverantör",
+ "imp.legalform": "Enskild firma (litet företag)",
+ "imp.country": "Tyskland",
+ "imp.h.contact": "Kontakt",
+ "imp.email": "E-post",
+ "imp.h.responsible": "Ansvarig för innehållet enligt § 18 st. 2 MStV",
+ "imp.responsible": "David Rallo, adress enligt ovan",
+ "imp.h.dsa": "Kontaktpunkt enligt Digital Services Act",
+ "imp.dsa": "Gemensam kontaktpunkt för myndigheter och användare enligt artiklarna 11 och 12 i förordning (EU) 2022/2065 (Digital Services Act): <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a>. Förfrågningar kan göras på tyska, engelska eller italienska.",
+ "imp.h.adr": "Tvistlösning för konsumenter",
+ "imp.adr": "Vi är varken villiga eller skyldiga att delta i tvistlösningsförfaranden inför en konsumenttvistnämnd (§ 36 VSBG).",
+ "imp.h.liab": "Ansvar för innehåll",
+ "imp.liab": "Vi ansvarar för vårt eget innehåll på dessa sidor enligt allmän lag. För information från tredje part som vi endast överför eller lagrar (till exempel inlägg från communityn i appen) gäller ansvarsreglerna i artiklarna 4–6 i förordning (EU) 2022/2065 (Digital Services Act). Det finns ingen allmän skyldighet att övervaka sådan information (artikel 8 DSA). Så snart vi får kännedom om olagligt innehåll tar vi bort det utan dröjsmål.",
+ "imp.h.links": "Ansvar för länkar",
+ "imp.links": "Vår tjänst innehåller länkar till externa webbplatser som tillhör tredje part och vars innehåll vi inte kan påverka. Ansvaret för innehållet på de länkade sidorna ligger alltid hos respektive leverantör eller operatör. Om vi får kännedom om lagöverträdelser tar vi omedelbart bort de berörda länkarna.",
+ "imp.h.copy": "Upphovsrätt",
+ "imp.copy": "Innehåll och verk som vi har skapat på dessa sidor omfattas av tysk upphovsrätt. Mångfaldigande, bearbetning, spridning och varje form av användning utöver upphovsrättens gränser kräver vårt skriftliga medgivande."
+}
