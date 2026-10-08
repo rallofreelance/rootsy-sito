@@ -26,6 +26,14 @@
     Content-Type = "application/json"
     Cache-Control = "no-cache, max-age=0"
 
+# Font del sito (ospitati da noi, non da Google). Il nome dei file contiene la
+# versione (es. inter-v20-latin.woff2): se un giorno cambiano, cambia il nome.
+# Così il browser li può tenere in memoria per un anno senza richiederli.
+[[headers]]
+  for = "/fonts/files/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 # Protezioni di sicurezza standard per tutte le pagine
 [[headers]]
   for = "/*"
