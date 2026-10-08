@@ -53,7 +53,7 @@
 <!-- seo:end -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":"https://myrootsy.com/#org","name":"Rootsy","url":"https://myrootsy.com/","logo":"https://myrootsy.com/rootsy-logo.jpg.jpeg","email":"hello@myrootsy.com","founder":{"@type":"Person","name":"David Rallo"}},
+ {"@type":"Organization","@id":"https://myrootsy.com/#org","name":"Rootsy","url":"https://myrootsy.com/","logo":"https://myrootsy.com/rootsy-logo.jpg.jpeg","email":"hello@myrootsy.com","founder":{"@type":"Person","name":"David Rallo","image":"https://myrootsy.com/img/david-rallo-600.jpg"}},
  {"@type":"WebSite","@id":"https://myrootsy.com/#site","name":"Rootsy","url":"https://myrootsy.com/","publisher":{"@id":"https://myrootsy.com/#org"},"inLanguage":["it","en","de","fr","es","ar","ro","ru","pl","tr","zh","fa","sq","nl","pt","cs","sk","hu","sv","da","fi","el","hr","sr","bg","sl","nb","et","lv","lt","uk"]}
 ]}
 </script>
@@ -311,7 +311,7 @@
 
   /* === FOUNDER === */
   .founder { background: white; border: 1px solid var(--border); border-radius: 32px; padding: 42px; display: grid; grid-template-columns: 200px 1fr; gap: 36px; align-items: center; box-shadow: 0 12px 36px rgba(0,0,0,0.05); }
-  .founder-photo svg { width: 100%; max-width: 200px; }
+  .founder-photo img { display: block; width: 100%; max-width: 200px; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; border: 3px solid var(--orange); background: var(--orange-soft); box-shadow: 0 12px 30px rgba(255,107,53,0.18); }
   .founder-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--orange); text-transform: uppercase; margin-bottom: 8px; }
   .founder-name { font-size: clamp(26px, 3.5vw, 36px); font-weight: 800; letter-spacing: -0.8px; margin-bottom: 14px; }
   .founder-text { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
@@ -457,7 +457,7 @@
     .manifesto { padding: 32px 24px; }
     .mapdemo-wrap { grid-template-columns: 1fr; }
     .founder { grid-template-columns: 1fr; padding: 28px; text-align: center; }
-    .founder-photo svg { margin: 0 auto; }
+    .founder-photo img { margin: 0 auto; max-width: 170px; }
     .sos-banner { grid-template-columns: 1fr; padding: 28px; }
     .sos-list { grid-template-columns: 1fr; }
     .sticky-cta { display: block; }
@@ -1127,12 +1127,10 @@ body.menu-open .jump-bar { opacity: 0; pointer-events: none; }
 <section id="founder">
   <div class="founder">
     <div class="founder-photo">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="98" fill="#FFF2ED" stroke="#FF6B35" stroke-width="3"/>
-        <circle cx="100" cy="78" r="32" fill="#FF6B35"/>
-        <path d="M40 180 C 40 130, 160 130, 160 180 Z" fill="#FF6B35"/>
-        <text x="100" y="92" font-family="Inter" font-size="34" font-weight="800" fill="white" text-anchor="middle">D</text>
-      </svg>
+      <picture>
+        <source type="image/webp" srcset="/img/david-rallo-400.webp 400w, /img/david-rallo-600.webp 600w" sizes="200px">
+        <img src="/img/david-rallo-400.jpg" srcset="/img/david-rallo-400.jpg 400w, /img/david-rallo-600.jpg 600w" sizes="200px" width="200" height="200" alt="David Rallo" loading="lazy" decoding="async">
+      </picture>
     </div>
     <div class="founder-body">
       <div class="founder-eyebrow" data-i18n="founder.eyebrow">Nata da chi ci è passato</div>

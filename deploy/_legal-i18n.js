@@ -1,8 +1,9 @@
 /* ========================================================================
    Rootsy — i18n condiviso per pagine legali (privacy / terms / cookies /
-   impressum). Traduce interfaccia (nav, titolo pagina, advisory, footer)
-   in 31 lingue. Il CORPO del testo legale resta in italiano: la versione
-   italiana è la versione vincolante.
+   impressum). Traduce interfaccia (nav, titolo della scheda, footer)
+   in 31 lingue. Il TESTO delle pagine è tradotto a parte:
+   _legal-body-i18n.js (privacy / terms / cookies: vale la versione italiana)
+   e _impressum-i18n.js (impressum: vale la versione tedesca).
    ======================================================================== */
 (function(){
   var SUPPORTED = ['it','en','de','fr','es','ar','ro','ru','pl','tr','zh','fa','sq',
@@ -20,7 +21,7 @@
   };
 
   /* Chiavi: nav.back, page.eyebrow, page.title.{privacy,terms,cookies,impressum},
-     advisory.title, advisory.body (HTML), footer.copy (HTML) */
+     footer.copy (HTML). L'avviso "traduzione" sta nei file di ogni pagina. */
   var I18N = {
     en: {
       'nav.back': '← Back to site',
@@ -29,8 +30,6 @@
       'page.title.terms': 'Terms of Service',
       'page.title.cookies': 'Cookie Policy',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Courtesy translation',
-      'advisory.body': 'This legal document is provided as a <strong>courtesy translation</strong>. The Italian version remains the <strong>binding version</strong>. For a complete version in your language write to <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — we will publish it within 48h.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     it: {
@@ -40,8 +39,6 @@
       'page.title.terms': 'Termini di Servizio',
       'page.title.cookies': 'Cookie Policy',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Traduzione di cortesia',
-      'advisory.body': 'Questo documento legale è fornito come <strong>traduzione di cortesia</strong>. La versione italiana resta la <strong>versione vincolante</strong>. Per una versione completa nella tua lingua scrivi a <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — la pubblicheremo entro 48h.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     de: {
@@ -51,8 +48,6 @@
       'page.title.terms': 'Nutzungsbedingungen',
       'page.title.cookies': 'Cookie-Richtlinie',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Höflichkeitsübersetzung',
-      'advisory.body': 'Dieses Rechtsdokument wird als <strong>Höflichkeitsübersetzung</strong> bereitgestellt. Die italienische Version bleibt die <strong>verbindliche Version</strong>. Für eine vollständige Version in deiner Sprache schreibe an <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — wir veröffentlichen sie innerhalb von 48 Stunden.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     fr: {
@@ -62,8 +57,6 @@
       'page.title.terms': "Conditions d'utilisation",
       'page.title.cookies': 'Politique de cookies',
       'page.title.impressum': 'Mentions légales',
-      'advisory.title': 'Traduction de courtoisie',
-      'advisory.body': "Ce document légal est fourni comme une <strong>traduction de courtoisie</strong>. La version italienne reste la <strong>version contraignante</strong>. Pour une version complète dans ta langue écris à <a href=\"mailto:hello@myrootsy.com\">hello@myrootsy.com</a> — nous la publierons sous 48h.",
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     es: {
@@ -73,8 +66,6 @@
       'page.title.terms': 'Términos de servicio',
       'page.title.cookies': 'Política de cookies',
       'page.title.impressum': 'Aviso legal',
-      'advisory.title': 'Traducción de cortesía',
-      'advisory.body': 'Este documento legal se proporciona como <strong>traducción de cortesía</strong>. La versión italiana sigue siendo la <strong>versión vinculante</strong>. Para una versión completa en tu idioma escribe a <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — la publicaremos en 48h.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     ar: {
@@ -84,8 +75,6 @@
       'page.title.terms': 'شروط الخدمة',
       'page.title.cookies': 'سياسة ملفات تعريف الارتباط',
       'page.title.impressum': 'بيانات الناشر',
-      'advisory.title': 'ترجمة من باب المجاملة',
-      'advisory.body': 'يتم توفير هذه الوثيقة القانونية كـ <strong>ترجمة من باب المجاملة</strong>. تبقى النسخة الإيطالية <strong>النسخة الملزمة</strong>. للحصول على نسخة كاملة بلغتك اكتب إلى <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — سننشرها خلال 48 ساعة.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     ro: {
@@ -95,8 +84,6 @@
       'page.title.terms': 'Termenii serviciului',
       'page.title.cookies': 'Politica cookie-urilor',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Traducere de curtoazie',
-      'advisory.body': 'Acest document legal este furnizat ca <strong>traducere de curtoazie</strong>. Versiunea italiană rămâne <strong>versiunea obligatorie</strong>. Pentru o versiune completă în limba ta scrie la <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — o vom publica în 48h.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     ru: {
@@ -106,8 +93,6 @@
       'page.title.terms': 'Условия обслуживания',
       'page.title.cookies': 'Политика использования cookie',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Перевод из вежливости',
-      'advisory.body': 'Этот юридический документ предоставляется как <strong>перевод из вежливости</strong>. Итальянская версия остаётся <strong>обязательной версией</strong>. Для полной версии на твоём языке напиши на <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — мы опубликуем её в течение 48 часов.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     pl: {
@@ -117,8 +102,6 @@
       'page.title.terms': 'Warunki świadczenia usług',
       'page.title.cookies': 'Polityka cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Tłumaczenie kurtuazyjne',
-      'advisory.body': 'Ten dokument prawny jest udostępniany jako <strong>tłumaczenie kurtuazyjne</strong>. Wersja włoska pozostaje <strong>wersją wiążącą</strong>. Aby uzyskać pełną wersję w swoim języku napisz na <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — opublikujemy ją w ciągu 48h.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     tr: {
@@ -128,8 +111,6 @@
       'page.title.terms': 'Hizmet Şartları',
       'page.title.cookies': 'Çerez Politikası',
       'page.title.impressum': 'Künye',
-      'advisory.title': 'Nezaket çevirisi',
-      'advisory.body': 'Bu hukuki belge bir <strong>nezaket çevirisi</strong> olarak sağlanmıştır. İtalyanca versiyon <strong>bağlayıcı versiyon</strong> olarak kalır. Dilinde tam versiyon için <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> adresine yaz — 48 saat içinde yayınlayacağız.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     zh: {
@@ -139,8 +120,6 @@
       'page.title.terms': '服务条款',
       'page.title.cookies': 'Cookie 政策',
       'page.title.impressum': '版权声明',
-      'advisory.title': '礼貌翻译',
-      'advisory.body': '此法律文件作为<strong>礼貌翻译</strong>提供。意大利语版本仍为<strong>具有约束力的版本</strong>。如需您语言的完整版本，请写信至 <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — 我们将在 48 小时内发布。',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     fa: {
@@ -150,8 +129,6 @@
       'page.title.terms': 'شرایط خدمات',
       'page.title.cookies': 'سیاست کوکی',
       'page.title.impressum': 'اطلاعات ناشر',
-      'advisory.title': 'ترجمه تشریفاتی',
-      'advisory.body': 'این سند حقوقی به‌عنوان <strong>ترجمه تشریفاتی</strong> ارائه می‌شود. نسخه ایتالیایی <strong>نسخه الزام‌آور</strong> باقی می‌ماند. برای نسخه کامل به زبان شما به <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> بنویسید — آن را ظرف ۴۸ ساعت منتشر خواهیم کرد.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     sq: {
@@ -161,8 +138,6 @@
       'page.title.terms': 'Termat e Shërbimit',
       'page.title.cookies': 'Politika e Cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Përkthim mirësjellës',
-      'advisory.body': 'Ky dokument ligjor ofrohet si <strong>përkthim mirësjellës</strong>. Versioni italian mbetet <strong>versioni detyrues</strong>. Për një version të plotë në gjuhën tënde shkruaj te <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — do ta publikojmë brenda 48 orësh.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     nl: {
@@ -172,8 +147,6 @@
       'page.title.terms': 'Servicevoorwaarden',
       'page.title.cookies': 'Cookiebeleid',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Vertaling uit hoffelijkheid',
-      'advisory.body': 'Dit juridische document wordt aangeboden als <strong>vertaling uit hoffelijkheid</strong>. De Italiaanse versie blijft de <strong>bindende versie</strong>. Wil je een volledige versie in jouw taal? Schrijf naar <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — we publiceren die binnen 48 uur.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     pt: {
@@ -183,8 +156,6 @@
       'page.title.terms': 'Termos de Serviço',
       'page.title.cookies': 'Política de Cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Tradução de cortesia',
-      'advisory.body': 'Este documento legal é disponibilizado como <strong>tradução de cortesia</strong>. A versão italiana continua a ser a <strong>versão vinculativa</strong>. Para uma versão completa na tua língua escreve para <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — publicá-la-emos em 48 horas.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     cs: {
@@ -194,8 +165,6 @@
       'page.title.terms': 'Podmínky služby',
       'page.title.cookies': 'Zásady cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Informativní překlad',
-      'advisory.body': 'Tento právní dokument je poskytnut jako <strong>informativní překlad</strong>. <strong>Závazná zůstává</strong> italská verze. Pro úplnou verzi ve svém jazyce napiš na <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — zveřejníme ji do 48 hodin.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     sk: {
@@ -205,8 +174,6 @@
       'page.title.terms': 'Podmienky služby',
       'page.title.cookies': 'Zásady cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Informatívny preklad',
-      'advisory.body': 'Tento právny dokument je poskytnutý ako <strong>informatívny preklad</strong>. <strong>Záväzná zostáva</strong> talianska verzia. Pre úplnú verziu vo svojom jazyku napíš na <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — zverejníme ju do 48 hodín.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     hu: {
@@ -216,8 +183,6 @@
       'page.title.terms': 'Felhasználási feltételek',
       'page.title.cookies': 'Cookie-szabályzat',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Tájékoztató fordítás',
-      'advisory.body': 'Ez a jogi dokumentum <strong>tájékoztató fordításként</strong> érhető el. Az olasz változat marad a <strong>kötelező érvényű változat</strong>. Ha a saját nyelveden szeretnéd a teljes változatot, írj a <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> címre — 48 órán belül közzétesszük.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     sv: {
@@ -227,8 +192,6 @@
       'page.title.terms': 'Användarvillkor',
       'page.title.cookies': 'Cookiepolicy',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Artighetsöversättning',
-      'advisory.body': 'Detta juridiska dokument tillhandahålls som <strong>artighetsöversättning</strong>. Den italienska versionen är fortfarande den <strong>bindande versionen</strong>. Vill du ha en fullständig version på ditt språk? Skriv till <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — vi publicerar den inom 48 timmar.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     da: {
@@ -238,8 +201,6 @@
       'page.title.terms': 'Servicevilkår',
       'page.title.cookies': 'Cookiepolitik',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Høflighedsoversættelse',
-      'advisory.body': 'Dette juridiske dokument stilles til rådighed som <strong>høflighedsoversættelse</strong>. Den italienske version er fortsat den <strong>bindende version</strong>. Vil du have en komplet version på dit sprog? Skriv til <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — vi offentliggør den inden for 48 timer.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     fi: {
@@ -249,8 +210,6 @@
       'page.title.terms': 'Käyttöehdot',
       'page.title.cookies': 'Evästekäytäntö',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Epävirallinen käännös',
-      'advisory.body': 'Tämä oikeudellinen asiakirja on <strong>epävirallinen käännös</strong>. Italiankielinen versio on edelleen <strong>sitova versio</strong>. Jos haluat täydellisen version omalla kielelläsi, kirjoita osoitteeseen <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — julkaisemme sen 48 tunnin kuluessa.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     el: {
@@ -260,8 +219,6 @@
       'page.title.terms': 'Όροι χρήσης',
       'page.title.cookies': 'Πολιτική cookies',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Ανεπίσημη μετάφραση',
-      'advisory.body': 'Αυτό το νομικό έγγραφο παρέχεται ως <strong>ανεπίσημη μετάφραση</strong>. Η ιταλική έκδοση παραμένει η <strong>δεσμευτική έκδοση</strong>. Για πλήρη έκδοση στη γλώσσα σου γράψε στο <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — θα τη δημοσιεύσουμε μέσα σε 48 ώρες.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     hr: {
@@ -271,8 +228,6 @@
       'page.title.terms': 'Uvjeti korištenja',
       'page.title.cookies': 'Pravila o kolačićima',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Neslužbeni prijevod',
-      'advisory.body': 'Ovaj pravni dokument dostupan je kao <strong>neslužbeni prijevod</strong>. <strong>Obvezujuća verzija</strong> ostaje talijanska. Za potpunu verziju na svom jeziku piši na <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — objavit ćemo je u roku od 48 sati.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     sr: {
@@ -282,8 +237,6 @@
       'page.title.terms': 'Услови коришћења',
       'page.title.cookies': 'Политика колачића',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Незванични превод',
-      'advisory.body': 'Овај правни документ доступан је као <strong>незванични превод</strong>. <strong>Обавезујућа верзија</strong> остаје италијанска. За комплетну верзију на свом језику пиши на <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — објавићемо је у року од 48 сати.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     bg: {
@@ -293,8 +246,6 @@
       'page.title.terms': 'Условия за ползване',
       'page.title.cookies': 'Политика за бисквитките',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Неофициален превод',
-      'advisory.body': 'Този правен документ е предоставен като <strong>неофициален превод</strong>. <strong>Обвързваща остава</strong> италианската версия. За пълна версия на твоя език пиши на <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — ще я публикуваме до 48 часа.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     sl: {
@@ -304,8 +255,6 @@
       'page.title.terms': 'Pogoji uporabe',
       'page.title.cookies': 'Politika piškotkov',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Neuradni prevod',
-      'advisory.body': 'Ta pravni dokument je na voljo kot <strong>neuradni prevod</strong>. <strong>Zavezujoča različica</strong> ostaja italijanska. Za celotno različico v svojem jeziku piši na <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — objavili jo bomo v 48 urah.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     nb: {
@@ -315,8 +264,6 @@
       'page.title.terms': 'Tjenestevilkår',
       'page.title.cookies': 'Retningslinjer for informasjonskapsler',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Høflighetsoversettelse',
-      'advisory.body': 'Dette juridiske dokumentet tilbys som <strong>høflighetsoversettelse</strong>. Den italienske versjonen er fortsatt den <strong>bindende versjonen</strong>. Vil du ha en fullstendig versjon på ditt språk? Skriv til <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — vi publiserer den innen 48 timer.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     et: {
@@ -326,8 +273,6 @@
       'page.title.terms': 'Teenusetingimused',
       'page.title.cookies': 'Küpsiste poliitika',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Mitteametlik tõlge',
-      'advisory.body': 'See õigusdokument on esitatud <strong>mitteametliku tõlkena</strong>. <strong>Siduvaks jääb</strong> itaaliakeelne versioon. Kui soovid täielikku versiooni oma keeles, kirjuta aadressile <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — avaldame selle 48 tunni jooksul.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     lv: {
@@ -337,8 +282,6 @@
       'page.title.terms': 'Pakalpojuma noteikumi',
       'page.title.cookies': 'Sīkdatņu politika',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Neoficiāls tulkojums',
-      'advisory.body': 'Šis juridiskais dokuments ir sniegts kā <strong>neoficiāls tulkojums</strong>. <strong>Saistošā versija</strong> joprojām ir itāļu valodā. Ja vēlies pilnu versiju savā valodā, raksti uz <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — to publicēsim 48 stundu laikā.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     lt: {
@@ -348,8 +291,6 @@
       'page.title.terms': 'Paslaugų teikimo sąlygos',
       'page.title.cookies': 'Slapukų politika',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Neoficialus vertimas',
-      'advisory.body': 'Šis teisinis dokumentas pateikiamas kaip <strong>neoficialus vertimas</strong>. <strong>Privaloma versija</strong> išlieka itališkoji. Jei nori visos versijos savo kalba, rašyk <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — paskelbsime ją per 48 valandas.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     },
     uk: {
@@ -359,8 +300,6 @@
       'page.title.terms': 'Умови користування',
       'page.title.cookies': 'Політика щодо файлів cookie',
       'page.title.impressum': 'Impressum',
-      'advisory.title': 'Неофіційний переклад',
-      'advisory.body': 'Цей юридичний документ надано як <strong>неофіційний переклад</strong>. <strong>Обов’язковою залишається</strong> італійська версія. Щоб отримати повну версію своєю мовою, напиши на <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a> — ми опублікуємо її протягом 48 годин.',
       'footer.copy': '© 2026 Rootsy · <a href="/">myrootsy.com</a> · <a href="mailto:hello@myrootsy.com">hello@myrootsy.com</a>'
     }
   };
@@ -418,6 +357,8 @@
 
     /* Impressum: il corpo della pagina ha traduzioni proprie (_impressum-i18n.js) */
     if (page === 'impressum' && window.__impressumApply) window.__impressumApply(lng);
+    /* Privacy, Termini, Cookie: il testo ha traduzioni proprie (_legal-body-i18n.js) */
+    if (page && page !== 'impressum' && window.__legalBodyApply) window.__legalBodyApply(lng);
 
     try { localStorage.setItem('rootsy-legal-lang', lng); } catch(e){}
   }
