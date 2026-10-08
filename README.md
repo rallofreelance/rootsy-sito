@@ -19,5 +19,6 @@ Tutti i file del sito sono nella cartella `deploy/`.
 | `deploy/index.html` | La pagina principale, con tutte le traduzioni |
 | `deploy/privacy.html`, `deploy/terms.html`, `deploy/cookies.html`, `deploy/impressum.html` | Pagine legali |
 | `deploy/_legal-i18n.js` | Traduzioni dei menu delle pagine legali |
+| `deploy/fonts/` | I font del sito (Inter e Fraunces) ospitati da noi: nessuna richiesta parte verso Google Fonts |
 | `deploy/og-image.png` / `deploy/og-image.svg` | Immagine che compare quando si condivide il link |
 | `netlify.toml` | Impostazioni di pubblicazione |
