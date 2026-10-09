@@ -305,6 +305,15 @@
   };
 
   function detectLang(){
+    // 0) Lingua chiesta nel link (es. dall'app: privacy.html?lang=de)
+    try {
+      var q = new URLSearchParams(window.location.search).get('lang');
+      if (q) {
+        q = q.toLowerCase().slice(0, 2);
+        if (q === 'no' || q === 'nn') q = 'nb';
+        if (SUPPORTED.indexOf(q) !== -1) return q;
+      }
+    } catch(e){}
     try {
       // 1) Lingua già scelta sulla pagina legale
       var saved = localStorage.getItem('rootsy-legal-lang');
